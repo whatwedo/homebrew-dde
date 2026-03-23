@@ -7,22 +7,22 @@ class Dde < Formula
   on_macos do
     on_arm do
       url "https://packages.dde.sh/bin/dde-darwin-arm64"
-      sha256 "50749e8e1b84b87732ecee45704eac7e2ff729a419d055a7dad6f45379f915bf"
+      sha256 "76dd7dd8ad0ef16f2f5695586a86ac18e2527e3e07b3a17aed7b94d856377365"
     end
     on_intel do
       url "https://packages.dde.sh/bin/dde-darwin-amd64"
-      sha256 "4023752e8f74a4a7b9f28d9e250dc2259f12a414fd0ad03065a9199f7272999c"
+      sha256 "d0dbe82090e638bdb07fdeed61e65b550721cbd2ca442983e11b4f1771315530"
     end
   end
 
   on_linux do
     on_arm do
       url "https://packages.dde.sh/bin/dde-linux-arm64"
-      sha256 "631780878d2c24253e9aee021f7636a490574355c088d399793d2af5cd2eb6db"
+      sha256 "ee36c0f03949902966f2218cc23dcbaad80f8c1bac0e590a9dcb61ed7c8c7623"
     end
     on_intel do
       url "https://packages.dde.sh/bin/dde-linux-amd64"
-      sha256 "163988475806388df11c57114bda5931e7c2f94973a5882b31c8e760cd3fb6e1"
+      sha256 "84253c7807bec65a366174bfc8abe5a2b4b5325132efaf7836f0ba575e8518e7"
     end
   end
 
