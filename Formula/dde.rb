@@ -7,28 +7,27 @@ class Dde < Formula
   on_macos do
     on_arm do
       url "https://packages.dde.sh/bin/2.0.0-alpha.1/dde-darwin-arm64"
-      sha256 "74ea982ced80bedfde6de5fb287a13579ff69806fbacec25e3539910e748e984"
+      sha256 "8906a53daf5bf16904c6772c9f7acdcc3dc916b2b9e3529779174bd6169d0743"
     end
     on_intel do
       url "https://packages.dde.sh/bin/2.0.0-alpha.1/dde-darwin-amd64"
-      sha256 "575082228865706bf03edc7ae83dfd4cfe9cd55f5ebb92f83dae74598988ab16"
+      sha256 "4032d49613cde53e8bb9a842ab1d5282eb5956001146611a5e50ed7d73d0e9be"
     end
   end
 
   on_linux do
     on_arm do
       url "https://packages.dde.sh/bin/2.0.0-alpha.1/dde-linux-arm64"
-      sha256 "10c5659226b5a99a2f191d338b062fc8bbe51c641f66b9d0bfa6eb0b3cbc16f1"
+      sha256 "42c3d4dbd9d7d84c218a45e381562b285fb93ffd4859394922e15d978f3104ae"
     end
     on_intel do
       url "https://packages.dde.sh/bin/2.0.0-alpha.1/dde-linux-amd64"
-      sha256 "c701e1dffdaa02e9853e57c9628e1b54e8506aff42349816f436af576b0a62ce"
+      sha256 "a1048f679978c010404b206c9f28d3db98a7e8f123911faefacac0811aa54074"
     end
   end
 
   def install
-    binary_name = stable.url.split("/").last
-    bin.install binary_name => "dde"
+    bin.install version.to_s => "dde"
   end
 
   def post_install
