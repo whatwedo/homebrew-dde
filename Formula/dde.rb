@@ -7,22 +7,22 @@ class Dde < Formula
   on_macos do
     on_arm do
       url "https://packages.dde.sh/homebrew/2.0.0-alpha.1/dde-darwin-arm64"
-      sha256 "d92e35ad25293b0001e0a2d0e74b42ce3a6bbe3a45c6fc2c5b9f3626ed2ccaea"
+      sha256 "be24a7d81affcd788dfb1bb060b2730056a559a14e7cded316da80f0531ff2b8"
     end
     on_intel do
       url "https://packages.dde.sh/homebrew/2.0.0-alpha.1/dde-darwin-amd64"
-      sha256 "973ac3321a90ee405aa02c689e22d6d60e79e6e7817e7e469659f118a0e9e792"
+      sha256 "05eff9a67431d09c474bad3edf9477f78cc0a132f5d301aa99518b57fe905f9a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://packages.dde.sh/homebrew/2.0.0-alpha.1/dde-linux-arm64"
-      sha256 "fda3b19f5a5fe4528a7c0eeaf66222e616878d09e9fdd5791b0abd0a2ff05d96"
+      sha256 "b5f7189c95b19c18d4aaa29ee6b1695bf6240bf7934efcf245523dde1960180a"
     end
     on_intel do
       url "https://packages.dde.sh/homebrew/2.0.0-alpha.1/dde-linux-amd64"
-      sha256 "5a516c1dc7319861ea8d5416cd67e02bfa8da1132c02d762c65c0b35af42d62d"
+      sha256 "45e0ec3aa5fcff6b85d86e7ddf08f33b45ac51d95f9c53495a14055140668dc6"
     end
   end
 
