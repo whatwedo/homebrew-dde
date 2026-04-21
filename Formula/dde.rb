@@ -1,28 +1,30 @@
 class Dde < Formula
   desc "Docker Development Environment"
   homepage "https://github.com/whatwedo/dde"
-  version "2.0.0-alpha.4"
+  version "2.0.0-alpha.5"
   license "AGPL-3.0-or-later"
+
+  depends_on "mkcert"
 
   on_macos do
     on_arm do
-      url "https://packages.dde.sh/homebrew/2.0.0-alpha.4/dde-darwin-arm64"
-      sha256 "6bde0278502c9ce7dcca0ae9e900c5f8685b2f1586a7ffa4e1f0e727cd3cd6b5"
+      url "https://packages.dde.sh/homebrew/2.0.0-alpha.5/dde-darwin-arm64"
+      sha256 "daada835aa980b6ecc6b8a21ee02a810569e4b64b2ba6b7d36ff039f8fda9046"
     end
     on_intel do
-      url "https://packages.dde.sh/homebrew/2.0.0-alpha.4/dde-darwin-amd64"
-      sha256 "d9818efcc27debc9ed349760c6c8d49b6833f7df2231fdf48a2edacd74dfb845"
+      url "https://packages.dde.sh/homebrew/2.0.0-alpha.5/dde-darwin-amd64"
+      sha256 "7f81e49df8dfef14936c95cf5b5db2233bb26f94631c4515ae8d9a91cb57eb61"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://packages.dde.sh/homebrew/2.0.0-alpha.4/dde-linux-arm64"
-      sha256 "fc15ad4ca596033ffb3f5630b8de1d2ac9a49cb3006c3fd893a85beac2760fa2"
+      url "https://packages.dde.sh/homebrew/2.0.0-alpha.5/dde-linux-arm64"
+      sha256 "27e7d65992de56cc64b5f73ae86c3b7b3c3019032f9410fe458a5d207057da1f"
     end
     on_intel do
-      url "https://packages.dde.sh/homebrew/2.0.0-alpha.4/dde-linux-amd64"
-      sha256 "acc47d87bdfaadd60a3ec0e5dcadb661c5ed41557531a34edff5bec3c9306a82"
+      url "https://packages.dde.sh/homebrew/2.0.0-alpha.5/dde-linux-amd64"
+      sha256 "aa8642733751484f3e39cc25041d4a7c3304572a7915ca5925e6829bca35fc9e"
     end
   end
 
@@ -32,8 +34,11 @@ class Dde < Formula
 
   def caveats
     <<~EOS
-      To finish installing dde, run:
+      After installing dde for the first time, run:
         dde system:install
+
+      After upgrading dde, run:
+        dde system:update
     EOS
   end
 
