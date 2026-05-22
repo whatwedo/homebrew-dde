@@ -29,7 +29,7 @@ class Dde < Formula
   end
 
   def install
-    bin.install version.to_s => "dde"
+    bin.install Dir["dde-*"].first => "dde"
   end
 
   def caveats
