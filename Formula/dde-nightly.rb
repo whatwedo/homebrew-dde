@@ -31,7 +31,7 @@ class DdeNightly < Formula
   end
 
   def install
-    bin.install Dir["dde-*"].first => "dde"
+    bin.install Dir["*"].first => "dde"
   end
 
   def caveats
