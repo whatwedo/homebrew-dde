@@ -1,7 +1,7 @@
 class DdeNightly < Formula
   desc "Docker Development Environment"
   homepage "https://github.com/whatwedo/dde"
-  version "20260623.0903"
+  version "20260623.1501"
   license "AGPL-3.0-or-later"
 
   depends_on "mkcert"
@@ -10,23 +10,23 @@ class DdeNightly < Formula
 
   on_macos do
     on_arm do
-      url "https://packages.dde.sh/homebrew-nightly/20260623.0903/dde-darwin-arm64"
-      sha256 "09dff4e1a74a4768e7e8c702a7b98d782e64bf53b869cb8ae28027ad70fb5000"
+      url "https://packages.dde.sh/homebrew-nightly/20260623.1501/dde-darwin-arm64"
+      sha256 "b46da9420924cada0cbaf09c182b803201ca236428ea2b48232a9991e5ea8f6f"
     end
     on_intel do
-      url "https://packages.dde.sh/homebrew-nightly/20260623.0903/dde-darwin-amd64"
-      sha256 "3f6aa7a4d6a0910bca6de0dfa97652b951bfd2f3b79b585bc87966ca22a8f3e0"
+      url "https://packages.dde.sh/homebrew-nightly/20260623.1501/dde-darwin-amd64"
+      sha256 "87166546278635204a1f81d06e35003dd0ce83a30adef1c11b49bfbbc905b3d2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://packages.dde.sh/homebrew-nightly/20260623.0903/dde-linux-arm64"
-      sha256 "90d44b055adbc5d0f3c91da627b7063eace73c9e675f74c20e0807b146dc2e71"
+      url "https://packages.dde.sh/homebrew-nightly/20260623.1501/dde-linux-arm64"
+      sha256 "dac804f0b8b66b1677976c069efc54470eb0134c8f3d53d018e88368807d8aac"
     end
     on_intel do
-      url "https://packages.dde.sh/homebrew-nightly/20260623.0903/dde-linux-amd64"
-      sha256 "0d5270dcd5906bd6c5a8f0bb56286d6bbcbc90425d5d48477e123ad6a00f91fa"
+      url "https://packages.dde.sh/homebrew-nightly/20260623.1501/dde-linux-amd64"
+      sha256 "c773d3f82b47da8bec60bf0720fa0c9b34da1bfdcbb047ed182089b6afdf630b"
     end
   end
 
