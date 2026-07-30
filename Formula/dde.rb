@@ -1,30 +1,30 @@
 class Dde < Formula
   desc "Docker Development Environment"
   homepage "https://github.com/whatwedo/dde"
-  version "2.0.0-rc.2"
+  version "2.0.0"
   license "AGPL-3.0-or-later"
 
   depends_on "mkcert"
 
   on_macos do
     on_arm do
-      url "https://packages.dde.sh/homebrew/2.0.0-rc.2/dde-darwin-arm64"
-      sha256 "04c8ce20f8d87a2e4ae7aefc1647d42d00c6b33face93f10b47794d6d56e079c"
+      url "https://packages.dde.sh/homebrew/2.0.0/dde-darwin-arm64"
+      sha256 "b9a4d33b36b1a09f451670a471f59367a23bf2e95b446e361da34bbc4e04a42f"
     end
     on_intel do
-      url "https://packages.dde.sh/homebrew/2.0.0-rc.2/dde-darwin-amd64"
-      sha256 "43b2996139eae33c6e8ca2e02cd5c30987a47d047bf988d6c2a71440447581f8"
+      url "https://packages.dde.sh/homebrew/2.0.0/dde-darwin-amd64"
+      sha256 "316b1ecee13c9e1e8ab8bf5ffa874ce504127c080eb3bda74c030fa4c8c5421a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://packages.dde.sh/homebrew/2.0.0-rc.2/dde-linux-arm64"
-      sha256 "d5f46e2c5f9e8e30f1c5777b25e3df242fc9f9ce978ca193d619ac6fdb766d1a"
+      url "https://packages.dde.sh/homebrew/2.0.0/dde-linux-arm64"
+      sha256 "5e126635088083abfc57dda4adfdcd6cb0df43bc53794f475653a345f72a7fdd"
     end
     on_intel do
-      url "https://packages.dde.sh/homebrew/2.0.0-rc.2/dde-linux-amd64"
-      sha256 "b4612f4b09152ac1735009b8fa9b6a3f01b594024fa40813fc0cbd3e638cea09"
+      url "https://packages.dde.sh/homebrew/2.0.0/dde-linux-amd64"
+      sha256 "70cef5dbe98bf528cf95307ad36627c17ca0e582efe65cb8efc391b388410623"
     end
   end
 
